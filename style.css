@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Source+Serif+4:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Source Serif 4', sans-serif;
+    text-transform: capitalize;
+
+}
+.btn{
+    background: #fff;
+    margin-top: .5rem;
+    display: inline-block;
+    font-size: 1rem;
+    border: none;
+}
+header{
+    background: #f9d8af;
+    width: 100%;
+}
+.header-section{
+    padding-left: 10rem;
+    padding-top: 3rem;
+    background: #30373f;
+    width: 85%;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 1rem;
+    margin: auto;
+    margin-left: 4rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.navbar a::after{
+    content: '';
+    width: 1rem;
+    height: .2rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -.4rem;
+    border-radius: .2rem;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar .home{
+    margin-left: 0;
+    color: #fde0b8;
+}
+.heading h1{
+    font-size: 5rem;
+    padding-top: 5.5rem;
+    line-height: 5rem;
+    color: #fde0b8;
+    font-weight: 400;
+}
+.heading p{
+    font-size: 1rem;
+    padding-top: 2rem;
+    color: #fde0b8;
+    font-weight: 400;
+}
+.head .image img{
+    padding-top: 7rem;
+    width: 77vw;
+}
+.silver-plus{
+    display: flex;
+    padding-top: 4rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.silver-plus h2{
+    color: #fff;
+}
+.apartment{
+    display: flex;
+    margin: 4rem;
+}
+.apartment h5{
+    margin: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+}
+.apartment h5 span{
+    color: #fde0b8;
+}
+.apartment h5::after{
+    content: '';
+    position: absolute;
+    height: .2rem;
+    width: 1rem;
+    background: #fde0b8;
+    left: 0;
+    bottom: -.5rem;
+    border-radius: .2rem;
+    transition: 0.5s;
+}
+.apartment h5:hover::after{
+    width: 100%;
+}
+/*location section*/
+.location{
+    display: flex;
+    width: 100%;
+    height: 60vw;
+    position: relative;
+
+}
+.distance{
+    background: #1a1d22;
+    color: #fff;
+    padding-left: 4rem;
+    width: 20rem;
+}
+.distance h3{
+    color:#fff;
+}
+.distance p{
+    color: #fde0b8;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+.area{
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+.area h1{
+    font-size: 6rem;
+    font-weight: 300;
+    color: #343a46;
+}
+.area p{
+    color: #343a46;
+    font-size: .9rem;
+    padding-top: 1rem;
+}
+.area .image img{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.btn-1 button{
+    background: #fff;
+    margin-top: .5rem;
+    display: inline-block;
+    font-size: 1rem;
+    border: none;
+
+
+}
+.btn button a{
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*latest news*/
+.news-section{
+    background: #edeef0;
+    height: 85vh;
+    width: 100%;
+}
+.latest{
+    padding: 5rem 4rem;
+}
+.latest h1{
+    font-size: 5rem;
+    font-weight: 350;
+
+}
+.latest-news{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+.news{
+    width: 30rem;
+    height: 50vh;
+    padding: 2rem;
+}
+.news:hover{
+    background: #fff;
+    border-radius: .5rem;
+}
+.news h3{
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+.news p{
+    color: #767a7d;
+    font-size: .8rem;
+    padding-top: 1rem;
+}
+.btn button .material-icons{
+    padding-left: .3rem;
+    font-size: 1rem;
+}
+.btn-2 button{
+    display: flex;
+    align-items: center;
+    border: none;
+
+    
+}
+.btn-2 button a{
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
+    
+}
+.btn-2:hover a{
+    display: unset;
+    margin-right: 10px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+/*interior section*/
+.interior{
+    display: flex;
+    justify-content: space-between;
+    height: 150vh;
+    border: 1px solid #333;
+    
+
+}
+.designer{
+    background: #1a1d22;
+    padding: 6rem 4rem;
+    position: relative;
+    width: 50vw;
+}
+.designer .blog h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+}
+.designer .blog p{
+    color: #f9d8af;
+    padding-top: 1rem;
+    font-weight: 300;
+    width: 27rem;
+}
+.amenities{
+    margin-top: 70%;
+}
+.amenities h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.amenities p{
+    color: #f9d8af;
+    margin-top: .8rem;
+    font-weight: 300;
+    font-size: .8rem;
+    text-transform: lowercase;
+}
+.images img{
+    height: 150vh;
+    width: 49vw;
+    
+}
+.amenities .btn-3{
+    width: 13.5rem;
+    height: 3.5rem;
+    margin-top: 2.5rem;
+    background: #fde0b8;
+    border-radius: .1rem;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .3s;
+}
+.amenities .btn-3 a{
+    color: #1a1d22;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.amenities .btn-3:hover{
+    background: #fff;
+
+}
+/*book apartment  section*/
+.book{
+    padding-left: 20px;
+    border-left: 2px solid #000;
+}
+.book-apartment{
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 4rem;
+}
+.book-apartment h4{
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+.all-apartment{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 80%; */
+    margin-top: 30px;
+}
+.all-apartment a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #30373f;
+    margin-bottom: 1rem;
+    position: relative;
+    width: fit-content;
+}
+.all-apartment a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: .4rem;
+    background: #777;
+    bottom: -.2rem;
+    left: 0;
+    border-radius: .2rem;
+    transition: 1s;
+}
+.all-apartment a:hover::after{
+    width: 100%;
+}
+.apartment-book{
+    /* margin-top: 60%; */
+    margin-top: 30px;
+}
+.apartment-book p{
+    color: #30373f;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.apartment-book .btn-4{
+    width: 13.5rem;
+    height: 3.5rem;
+    margin-top: 2.5rem;
+    background: #343a46;
+    border: none;
+    border-radius: .1rem;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .3s;
+}
+.apartment-book .btn-4 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+.apartment-book .btn-4:hover{
+    background: #1a1d22;
+}
+/*footer section*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: #f9d8af;
+    height: 15vh;
+    padding: 3rem;
+}
+.copy{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 3rem;
+    color: #333;
+}
+.developed a{
+    text-decoration: none;
+    color: #333;
+    margin-right: 3rem;
+    position: relative;
+
+}
+.developed a::after{
+    content: '';
+    position: absolute;
+    height: .2rem;
+    width: 0;
+    background: #333;
+    right: 0;
+    bottom: -.2rem;
+    transition: 1s;
+
+}
+.developed a:hover::after{
+    width: 100%;
+}
